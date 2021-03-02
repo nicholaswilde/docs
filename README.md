@@ -1,3 +1,3 @@
-# Wiki
+# Docs
 
-Welcome to the k8s@home wiki!
+Welcome to the k8s@home docs!
