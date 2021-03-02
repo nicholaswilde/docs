@@ -3,10 +3,10 @@
 site_name: k8s@home | Wiki
 site_description: Wiki for the k8s@home community
 site_author: The k8s@home project
-site_url: https://wiki.k8s-at-home.com
+site_url: https://docs.k8s-at-home.com
 
-repo_name: k8s-at-home/wiki
-repo_url: https://github.com/k8s-at-home/wiki
+repo_name: k8s-at-home/docs
+repo_url: https://github.com/k8s-at-home/docs
 edit_uri: "edit/main/docs/"
 
 theme:
