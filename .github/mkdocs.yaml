@@ -7,7 +7,7 @@ site_url: https://docs.k8s-at-home.com
 
 repo_name: k8s-at-home/docs
 repo_url: https://github.com/k8s-at-home/docs
-edit_uri: "edit/main/docs/"
+edit_uri: ""
 
 theme:
   name: material
@@ -17,14 +17,24 @@ theme:
   palette:
     primary: blue
     accent: indigo
+  features:
+  - navigation.sections
+  - navigation.tabs
+  - navigation.tracking
+  - search.highlight
+  - search.share
+  - search.suggest
 
 docs_dir: ../docs
 
 extra_css:
 - ../docs/_static/custom.css
 
+# Plugins
 plugins:
 - search
+- minify:
+    minify_html: true
 
 # Customization
 extra:
@@ -75,4 +85,4 @@ markdown_extensions:
 - pymdownx.tilde
 
 nav:
-- Introduction: index.md
+- Home: index.md
