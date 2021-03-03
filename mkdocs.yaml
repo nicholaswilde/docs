@@ -104,7 +104,9 @@ nav:
 - Home: index.md
 - Helm charts:
   - Getting started: helm-charts/getting-started.md
-  - Common library: helm-charts/common-library.md
+  - Common library: 
+    - Background: helm-charts/common-library/background.md
+    - Add-ons: helm-charts/common-library/add-ons.md
   - Development:
     - Dependencies: helm-charts/development/dependencies.md
     - Creating a new chart: helm-charts/development/creating-a-new-chart.md
