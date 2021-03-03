@@ -53,8 +53,8 @@ This example shows how to add a Wireguard sidecar to our [qBittorrent Helm chart
 Below is an annotated example `values.yaml` that will result in a qBittorrent container with **all** its traffic routed through a VPN. In order to have functioning ingress and/or probes, it might be required to open certain networks or ports on the VPN firewall. That is beyond the scope of this document. Please refer to the [Wireguard client image](https://github.com/k8s-at-home/container-images/tree/main/wireguard) for more details on these environment variables.
 
 
-!!! note Custom container images
-    The `WAIT_FOR_VPN` environment variable is specifically implemented by our own qBittorrent image, and it will not work for other images.
+!!! note
+    The `WAIT_FOR_VPN` environment variable is specifically implemented by our own qBittorrent image, and it will not work with other container images.
 
 ```yaml
 image:
@@ -139,8 +139,8 @@ This example shows how to add an OpenVPN sidecar to our [qBittorrent Helm chart]
 
 Below is an annotated example `values.yaml` that will result in a qBittorrent container with **all** its traffic routed through a VPN. In order to have functioning ingress and/or probes, it might be required to open certain networks or ports on the VPN firewall. That is beyond the scope of this document. Please refer to the [OpenVPN client image](https://github.com/dperson/openvpn-client) for more details on these environment variables.
 
-!!! note Custom container images
-    The `WAIT_FOR_VPN` environment variable is specifically implemented by our own qBittorrent image, and it will not work for other images.
+!!! note
+    The `WAIT_FOR_VPN` environment variable is specifically implemented by our own qBittorrent image, and it will not work with other container images.
 
 ```yaml
 image:
