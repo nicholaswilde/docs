@@ -104,3 +104,4 @@ nav:
 - Home: index.md
 - Helm charts:
   - Getting started: helm-charts/getting-started.md
+  - Common library: helm-charts/common-library.md
