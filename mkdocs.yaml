@@ -25,10 +25,10 @@ theme:
   - search.share
   - search.suggest
 
-docs_dir: ../docs
+docs_dir: ./docs
 
 extra_css:
-- ../docs/_static/custom.css
+- _static/custom.css
 
 # Plugins
 plugins:
