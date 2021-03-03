@@ -14,7 +14,7 @@ on: # yamllint disable-line rule:truthy
     - 'docs/**'
 
 env:
-  GH_TOKEN: ${{ secrets.MKDOCS_MATERIAL_INSIDER_TOKEN }}
+  MKDOCS_MATERIAL_INSIDER_TOKEN: ${{ secrets.MKDOCS_MATERIAL_INSIDER_TOKEN }}
 
 jobs:
   deploy:
