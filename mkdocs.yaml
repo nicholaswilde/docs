@@ -11,8 +11,6 @@ edit_uri: ""
 
 theme:
   name: material
-  icon:
-    repo: fontawesome/brands/github-alt
   language: en
   palette:
     primary: blue
