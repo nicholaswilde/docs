@@ -25,8 +25,10 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: 3.x
+      - run: git config --global user.name "${GITHUB_ACTOR}"
+      - run: git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
       - run: pip install git+https://${MKDOCS_MATERIAL_INSIDER_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-      - run: mkdocs gh-deploy --force
+      - run: mkdocs gh-deploy --config-file .github/mkdocs.yaml --force
 
 # on: # yamllint disable-line rule:truthy
 #   workflow_dispatch:
