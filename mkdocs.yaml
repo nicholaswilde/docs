@@ -1,20 +1,20 @@
 ---
 
+# Project information
 site_name: k8s@home | Docs
 site_description: Docs for the k8s@home community
 site_author: The k8s@home project
 site_url: https://docs.k8s-at-home.com
 
+# Repository
 repo_name: k8s-at-home/docs
 repo_url: https://github.com/k8s-at-home/docs
 edit_uri: ""
 
+# Configuration
 theme:
   name: material
   language: en
-  palette:
-    primary: blue
-    accent: indigo
   features:
   - navigation.sections
   - navigation.tabs
@@ -22,6 +22,23 @@ theme:
   - search.highlight
   - search.share
   - search.suggest
+  palette:
+  - scheme: default
+    primary: blue
+    accent: indigo
+    toggle:
+      icon: material/toggle-switch-off-outline
+      name: Switch to dark mode
+  - scheme: slate
+    primary: red
+    accent: red
+    toggle:
+      icon: material/toggle-switch
+      name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
+
 
 docs_dir: ./docs
 
@@ -82,5 +99,8 @@ markdown_extensions:
     custom_checkbox: true
 - pymdownx.tilde
 
+# Page tree
 nav:
 - Home: index.md
+- Helm charts:
+  - Getting started: helm-charts/getting-started.md
