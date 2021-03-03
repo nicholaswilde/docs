@@ -13,15 +13,41 @@ on: # yamllint disable-line rule:truthy
     - 'mkdocs.yml'
     - 'docs/**'
 
-jobs:
-  build:
-    runs-on: ubuntu-20.04
-    steps:
-    - name: Checkout branch
-      uses: actions/checkout@v2
+env:
+  GH_TOKEN: ${{ secrets.MKDOCS_MATERIAL_INSIDER_TOKEN }}
 
-    - name: Deploy docs
-      uses: mhausenblas/mkdocs-deploy-gh-pages@master
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        CUSTOM_DOMAIN: docs.k8s-at-home.com
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    if: github.event.pull_request.head.repo.fork == false
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - run: pip install git+https://${MKDOCS_MATERIAL_INSIDER_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
+      - run: mkdocs gh-deploy --force
+
+# on: # yamllint disable-line rule:truthy
+#   workflow_dispatch:
+#   push:
+#     branches:
+#     - 'docs-*'
+#     - main
+#     paths:
+#     - '.github/workflows/docs.yaml'
+#     - 'mkdocs.yml'
+#     - 'docs/**'
+
+# jobs:
+#   build:
+#     runs-on: ubuntu-20.04
+#     steps:
+#     - name: Checkout branch
+#       uses: actions/checkout@v2
+
+#     - name: Deploy docs
+#       uses: mhausenblas/mkdocs-deploy-gh-pages@master
+#       env:
+#         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#         CUSTOM_DOMAIN: docs.k8s-at-home.com
