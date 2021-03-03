@@ -105,3 +105,7 @@ nav:
 - Helm charts:
   - Getting started: helm-charts/getting-started.md
   - Common library: helm-charts/common-library.md
+  - Development:
+    - Dependencies: helm-charts/development-dependencies.md
+    - Creating a new chart: helm-charts/development-creating-a-new-chart.md
+    - Unit tests: helm-charts/development-unit-tests.md
