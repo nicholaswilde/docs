@@ -113,6 +113,7 @@ nav:
     - Unit tests: helm-charts/development/unit-tests.md
 - Container images:
   - Getting started: container-images/getting-started.md
+  - Configuration: container-images/configuration.md
   - Permissions: container-images/permissions.md
   - Deprecations: container-images/deprecations.md
 - Storage: storage/getting-started.md
