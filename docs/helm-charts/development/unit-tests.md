@@ -4,9 +4,15 @@ We unit test our common library, while it isn't near complete coverage but it do
 
 Running these tests can be done any way you like. In this document we describe a number of approaches: 
 
-* [Directly on your development machine](#directly-on-your-development-machine)
-* [Through a development container in Visual Studio Code](#using-visual-studio-code)
-* [Using a local Docker container](#using-a-local-docker-container)
+- [Unit tests](#unit-tests)
+  - [Directly on your development machine](#directly-on-your-development-machine)
+  - [Using Visual Studio Code](#using-visual-studio-code)
+    - [Prerequisites](#prerequisites)
+    - [Running tests](#running-tests)
+  - [Using a local Docker container](#using-a-local-docker-container)
+    - [Prerequisites](#prerequisites-1)
+    - [Running tests](#running-tests-1)
+  - [Output](#output)
 
 ## Directly on your development machine
 
