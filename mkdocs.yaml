@@ -56,8 +56,10 @@ extra:
   social:
   - icon: fontawesome/brands/github
     link: https://github.com/k8s-at-home
+  - icon: fontawesome/brands/discord
+    link: https://discord.gg/sTMX7Vh
   - icon: fontawesome/brands/twitter
-    link: https://twitter.com/k8s-at-home
+    link: https://twitter.com/k8sathome
 
 # Extensions
 markdown_extensions:
@@ -102,19 +104,22 @@ markdown_extensions:
 # Page tree
 nav:
 - Home: index.md
-- Helm charts:
-  - Getting started: helm-charts/getting-started.md
+- Our Helm Charts:
+  - Getting started: our-helm-charts/getting-started.md
   - Common library: 
-    - Background: helm-charts/common-library/background.md
-    - Add-ons: helm-charts/common-library/add-ons.md
+    - Background: our-helm-charts/common-library/background.md
+    - Add-ons: our-helm-charts/common-library/add-ons.md
   - Development:
-    - Dependencies: helm-charts/development/dependencies.md
-    - Creating a new chart: helm-charts/development/creating-a-new-chart.md
-    - Unit tests: helm-charts/development/unit-tests.md
-- Container images:
-  - Getting started: container-images/getting-started.md
-  - Configuration: container-images/configuration.md
-  - Permissions: container-images/permissions.md
-  - Deprecations: container-images/deprecations.md
-- Storage: storage/getting-started.md
-- Load Balancing: load-balancing/getting-started.md
+    - Dependencies: our-helm-charts/development/dependencies.md
+    - Creating a new chart: our-helm-charts/development/creating-a-new-chart.md
+    - Unit tests: our-helm-charts/development/unit-tests.md
+- Our Container Images:
+  - Getting started: our-container-images/getting-started.md
+  - Configuration: our-container-images/configuration.md
+  - Permissions: our-container-images/permissions.md
+  - Deprecations: our-container-images/deprecations.md
+- Guides:
+  - Storage:
+    - Getting started: guides/storage/getting-started.md
+  - Load Balancing:
+    - Getting started: guides/load-balancing/getting-started.md

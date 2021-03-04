@@ -1,4 +1,4 @@
-# Container images / Configuration
+# Configuration
 
 The following configuration is available across all the k8s@home container images.
 

@@ -1,4 +1,4 @@
-# Container images / Deprecations
+# Deprecations
 
 Container images that were once here but now are gone it is likely that the application...
 

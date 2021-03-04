@@ -1,4 +1,4 @@
-# Common library / Background
+# Background
 
 In Helm 3, their team introduced the concept of a [Library chart](https://helm.sh/docs/topics/library_charts/).
 

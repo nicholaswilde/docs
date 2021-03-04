@@ -1,4 +1,4 @@
-# Container images / Permissions
+# Permissions
 
 With Kubernetes, `s6-overlay` is not needed. Instead Kubernetes can use [Security Context](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/) on either the pod or container to tell what the container should run as, and/or what permissions files should be written as.
 
