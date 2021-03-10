@@ -39,7 +39,6 @@ theme:
     text: Roboto
     code: Roboto Mono
 
-
 docs_dir: ./docs
 
 extra_css:
