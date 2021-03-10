@@ -30,8 +30,8 @@ theme:
       icon: material/toggle-switch-off-outline
       name: Switch to dark mode
   - scheme: slate
-    primary: red
-    accent: red
+    primary: blue
+    accent: indigo
     toggle:
       icon: material/toggle-switch
       name: Switch to light mode
