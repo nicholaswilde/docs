@@ -1,12 +1,17 @@
 # Add-ons
 
+Our Helm charts have a few add-ons which are meant to simplify some features you might be looking for. These are sidecars that run in the same pod as your application you configured it with.
+
 ## Code Server
 
-One of the features of our common library chart is the ability to run a [code-server](https://github.com/cdr/code-server) sidecar alongside the application. This can be useful when you need to edit the persistent volume data, for example with Home Assistant.
+The [code-server](https://github.com/cdr/code-server) add-on can be used to access and modify persistent volume data in your application. This can be useful when you need to edit the persistent volume data, for example with Home Assistant.
+
+### Example values
 
 Below is a snippet from a `values.yaml` using the add-on. More configuration options can be found in our common chart documentation.
 
-### Example values
+!!! note
+    This example will mount `/config` into the code-server sidecar.
 
 ```yaml
 addons:
@@ -40,11 +45,9 @@ addons:
       mountPath: /config
 ```
 
+## Wireguard VPN
 
-## Wireguard
-
-One of the features of our common library chart is the ability to run a VPN sidecar alongside the application.
-Given how the network stack is shared between all the containers in a Pod, this enables you to force all (or selected) network traffic through this VPN sidecar.
+The Wireguard add-on enables you to force all (or selected) network traffic through a VPN.
 
 This example shows how to add a Wireguard sidecar to our [qBittorrent Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/qbittorrent). It does not cover all of the configuration possibilities of the [Wireguard client image](https://github.com/k8s-at-home/container-images/tree/main/wireguard), but should give a good starting point for configuring a similar setup.
 
@@ -130,8 +133,7 @@ addons:
 
 ## OpenVPN
 
-One of the features of our common library chart is the ability to run a VPN sidecar alongside the application.
-Given how the network stack is shared between all the containers in a Pod, this enables you to force all (or selected) network traffic through this VPN sidecar.
+Similar to the Wireguard VPN, the OpenVPN add-on enables you to force all (or selected) network traffic through a VPN.
 
 This example shows how to add an OpenVPN sidecar to our [qBittorrent Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/qbittorrent). It does not cover all of the configuration possibilities of the [OpenVPN client image](https://github.com/dperson/openvpn-client) by [@dperson](https://github.com/dperson), but should give a good starting point for configuring a similar setup.
 
