@@ -118,8 +118,3 @@ nav:
   - Configuration: our-container-images/configuration.md
   - Permissions: our-container-images/permissions.md
   - Deprecations: our-container-images/deprecations.md
-- Guides:
-  - Storage:
-    - Getting started: guides/storage/getting-started.md
-  - Load Balancing:
-    - Getting started: guides/load-balancing/getting-started.md
