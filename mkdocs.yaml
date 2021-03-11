@@ -23,6 +23,7 @@ theme:
   - navigation.sections
   - navigation.tabs
   - navigation.tracking
+  # - navigation.indexes
   - search.highlight
   - search.share
   - search.suggest
@@ -108,14 +109,13 @@ markdown_extensions:
 nav:
 - Home: index.md
 - Our Helm Charts:
-  - Getting started with our Helm charts: our-helm-charts/getting-started.md
-  - Common library:
-    - Getting started with our Common library: our-helm-charts/common-library/getting-started.md
-    - Add-ons: our-helm-charts/common-library/add-ons.md
+  - Introduction: our-helm-charts/introduction.md
+  - Common library: our-helm-charts/common-library.md
+  - Common library add-ons: our-helm-charts/common-library-add-ons.md
   - Development:
-    - Getting started with creating a Helm chart: our-helm-charts/development/getting-started.md
+    - Creating a new chart: our-helm-charts/development/creating-a-new-chart.md
     - Unit tests: our-helm-charts/development/unit-tests.md
 - Our Container Images:
-  - Getting started with our Container images: our-container-images/getting-started.md
+  - Introduction: our-container-images/introduction.md
   - Configuration: our-container-images/configuration.md
   - Permissions: our-container-images/permissions.md
