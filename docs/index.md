@@ -1,16 +1,20 @@
 # Welcome
 
-Welcome to the documentation for k8s@home which aims to support running [Kubernetes](https://kubernetes.io/) at home.
+Welcome to the documentation for [k8s@home](https://github.com/k8s-at-home) which aims to support running [Kubernetes](https://kubernetes.io/) at home.
 
 ## Features
 
-- Provide Helm charts to help define, install, and upgrade even the most complex Kubernetes application.
-- Provide container images that support [Semantic Versioning](https://semver.org/) and multiple architectures, designed to run in a Kubernetes cluster.
+- Provide Helm charts to help define, install, and upgrade even the most complex applications in Kubernetes.
+- Provide container images that support [Semantic Versioning](https://semver.org/), multiple architectures, and designed to run in a Kubernetes cluster.
+- Provide community support for people wanting to learn and deploy Kubernetes in their homes.
 
 ## Support
 
-- Having problems with a chart or container image? Open a new [issue](https://github.com/k8s-at-home/charts/issues/new/choose) or discuss in our [Discord](https://discord.gg/sTMX7Vh) in the `#support` channel.
-- New idea? Have a question? Start a discussion [here](https://github.com/k8s-at-home/organization/discussions) or in our [Discord](https://discord.gg/sTMX7Vh) in one of the dedicated channels.
+We have a few outlets for getting support with our projects:
+
+- Bugs or feature requests should be opened in an issue in their respected Github repository.
+- Discuss in our [Discord](https://discord.gg/sTMX7Vh).
+- Start a discussion in our [Github discussions](https://github.com/k8s-at-home/organization/discussions).
 
 ## License
 

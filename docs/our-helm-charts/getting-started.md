@@ -1,4 +1,4 @@
-# Getting started
+# Getting started with our Helm charts
 
 [Helm](https://helm.sh) must be installed to use our charts.
 
