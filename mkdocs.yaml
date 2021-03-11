@@ -108,14 +108,14 @@ markdown_extensions:
 nav:
 - Home: index.md
 - Our Helm Charts:
-  - Getting started: our-helm-charts/getting-started.md
+  - Getting started with our Helm charts: our-helm-charts/getting-started.md
   - Common library:
-    - Getting started: our-helm-charts/common-library/getting-started.md
+    - Getting started with our Common library: our-helm-charts/common-library/getting-started.md
     - Add-ons: our-helm-charts/common-library/add-ons.md
   - Development:
-    - Getting started: our-helm-charts/development/getting-started.md
+    - Getting started with creating a Helm chart: our-helm-charts/development/getting-started.md
     - Unit tests: our-helm-charts/development/unit-tests.md
 - Our Container Images:
-  - Getting started: our-container-images/getting-started.md
+  - Getting started with our Container images: our-container-images/getting-started.md
   - Configuration: our-container-images/configuration.md
   - Permissions: our-container-images/permissions.md

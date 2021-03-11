@@ -1,4 +1,4 @@
-# Getting started creating a new Chart
+# Getting started with creating a new Chart
 
 ## Dependencies
 
