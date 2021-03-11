@@ -5,7 +5,7 @@ Welcome to the documentation for k8s@home which aims to support running [Kuberne
 ## Features
 
 - Provide Helm charts to help define, install, and upgrade even the most complex Kubernetes application.
-- Provide container images that support [Semantic Versioning](https://semver.org/) and multiple architectures.
+- Provide container images that support [Semantic Versioning](https://semver.org/) and multiple architectures, designed to run in a Kubernetes cluster.
 
 ## Support
 
