@@ -10,7 +10,7 @@ Welcome to the documentation for k8s@home which aims to support running [Kuberne
 ## Support
 
 - Having problems with a chart or container image? Open a new [issue](https://github.com/k8s-at-home/charts/issues/new/choose) or discuss in our [Discord](https://discord.gg/sTMX7Vh) in the `#support` channel.
-- New idea? Discuss charts [here](https://github.com/k8s-at-home/charts/discussions) or container images [here]() or in our [Discord](https://discord.gg/sTMX7Vh) in the `#charts` channel.
+- New idea? Have a question? Start a discussion [here](https://github.com/k8s-at-home/organization/discussions) or in our [Discord](https://discord.gg/sTMX7Vh) in one of the dedicated channels.
 
 ## License
 
