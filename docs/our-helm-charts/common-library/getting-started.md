@@ -1,4 +1,4 @@
-# Getting started with our Common library
+# Getting started
 
 Most of our application Helm charts consume our Common library Helm chart.
 
