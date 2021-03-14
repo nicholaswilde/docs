@@ -114,6 +114,7 @@ nav:
   - Common library add-ons: our-helm-charts/common-library-add-ons.md
   - Development:
     - Creating a new chart: our-helm-charts/development/creating-a-new-chart.md
+    - Databases: our-helm-charts/development/databases.md
     - Unit tests: our-helm-charts/development/unit-tests.md
 - Our Container Images:
   - Introduction: our-container-images/introduction.md
