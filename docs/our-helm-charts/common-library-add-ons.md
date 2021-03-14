@@ -1,4 +1,4 @@
-# Add-ons
+# Common library add-ons
 
 Our Helm charts have a few add-ons which are meant to simplify some features you might be looking for. These are sidecars that run in the same pod as your application you configured it with.
 
