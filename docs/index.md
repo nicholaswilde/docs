@@ -16,6 +16,10 @@ We have a few outlets for getting support with our projects:
 - Discuss in our [Discord](https://discord.gg/sTMX7Vh).
 - Start a discussion in our [Github discussions](https://github.com/k8s-at-home/organization/discussions).
 
+## Awesome Home Kubernetes
+
+[Checkout](https://github.com/k8s-at-home/awesome-home-kubernetes) our curation of projects and resources involving running Kubernetes at home.
+
 ## License
 
 This project is licensed under the terms of the Apache 2.0 License license.
