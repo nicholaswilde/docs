@@ -20,26 +20,26 @@ theme:
     repo: fontawesome/brands/github-alt
   language: en
   features:
-  - navigation.sections
-  - navigation.tabs
-  - navigation.tracking
-  # - navigation.indexes
-  - search.highlight
-  - search.share
-  - search.suggest
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tracking
+    # - navigation.indexes
+    - search.highlight
+    - search.share
+    - search.suggest
   palette:
-  - scheme: default
-    primary: blue
-    accent: indigo
-    toggle:
-      icon: material/toggle-switch-off-outline
-      name: Switch to dark mode
-  - scheme: slate
-    primary: blue
-    accent: indigo
-    toggle:
-      icon: material/toggle-switch
-      name: Switch to light mode
+    - scheme: default
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -47,76 +47,76 @@ theme:
 docs_dir: ./docs
 
 extra_css:
-- _static/custom.css
+  - _static/custom.css
 
 # Plugins
 plugins:
-- search
-- minify:
-    minify_html: true
+  - search
+  - minify:
+      minify_html: true
 
 # Customization
 extra:
   social:
-  - icon: fontawesome/brands/github
-    link: https://github.com/k8s-at-home
-  - icon: fontawesome/brands/discord
-    link: https://discord.gg/sTMX7Vh
-  - icon: fontawesome/brands/twitter
-    link: https://twitter.com/k8sathome
+    - icon: fontawesome/brands/github
+      link: https://github.com/k8s-at-home
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/sTMX7Vh
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/k8sathome
 
 # Extensions
 markdown_extensions:
-- admonition
-- abbr
-- attr_list
-- def_list
-- footnotes
-- meta
-- md_in_html
-- toc:
-    permalink: true
-- pymdownx.arithmatex:
-    generic: true
-- pymdownx.betterem:
-    smart_enable: all
-- pymdownx.caret
-- pymdownx.critic
-- pymdownx.details
-- pymdownx.emoji:
-    emoji_index: !!python/name:materialx.emoji.twemoji
-    emoji_generator: !!python/name:materialx.emoji.to_svg
-- pymdownx.highlight
-- pymdownx.inlinehilite
-- pymdownx.keys
-- pymdownx.magiclink:
-    repo_url_shorthand: true
-    user: k8s-at-home
-    repo: docs
-- pymdownx.mark
-- pymdownx.smartsymbols
-- pymdownx.superfences:
-    custom_fences:
-      - name: mermaid
-        class: mermaid-experimental
-        format: !!python/name:pymdownx.superfences.fence_code_format
-- pymdownx.tabbed
-- pymdownx.tasklist:
-    custom_checkbox: true
-- pymdownx.tilde
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: k8s-at-home
+      repo: docs
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid-experimental
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
 
 # Page tree
 nav:
-- Home: index.md
-- Our Helm Charts:
-  - Introduction: our-helm-charts/introduction.md
-  - Common library: our-helm-charts/common-library.md
-  - Common library add-ons: our-helm-charts/common-library-add-ons.md
-  - Development:
-    - Creating a new chart: our-helm-charts/development/creating-a-new-chart.md
-    - Databases: our-helm-charts/development/databases.md
-    - Unit tests: our-helm-charts/development/unit-tests.md
-- Our Container Images:
-  - Introduction: our-container-images/introduction.md
-  - Configuration: our-container-images/configuration.md
-  - Permissions: our-container-images/permissions.md
+  - Home: index.md
+  - Our Helm Charts:
+      - Introduction: our-helm-charts/introduction.md
+      - Common library: our-helm-charts/common-library.md
+      - Common library add-ons: our-helm-charts/common-library-add-ons.md
+      - Development:
+          - Creating a new chart: our-helm-charts/development/creating-a-new-chart.md
+          - Databases: our-helm-charts/development/databases.md
+          - Unit tests: our-helm-charts/development/unit-tests.md
+  - Our Container Images:
+      - Introduction: our-container-images/introduction.md
+      - Configuration: our-container-images/configuration.md
+      - Permissions: our-container-images/permissions.md
