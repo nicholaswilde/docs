@@ -25,14 +25,22 @@ tasks:
 
   lint:
     desc: Lint the project
-    deps:
-      - yamllint
+    cmds:
+      - task: yamllint
+      - task: markdownlint
+
+  markdownlint:
+    desc: Run markdownlint-cli
+    cmds:
+      - >-
+        docker run --rm -it -v ${PWD}:/markdown:ro
+        06kellyjac/markdownlint-cli .
 
   yamllint:
     desc: Run yamllint
     cmds:
       - >-
-        docker run --rm -it -v ${PWD}:${PWD} -w ${PWD}
+        docker run --rm -it -v ${PWD}:${PWD}:ro -w ${PWD}
         programmerassistant/yamllint yamllint .
 
   default:

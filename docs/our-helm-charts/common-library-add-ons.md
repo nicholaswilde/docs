@@ -1,14 +1,20 @@
 # Common library add-ons
 
-Our Helm charts have a few add-ons which are meant to simplify some features you might be looking for. These are sidecars that run in the same pod as your application you configured it with.
+Our Helm charts have a few add-ons which are meant to simplify some features
+you might be looking for. These are sidecars that run in the same pod as your
+application you configured it with.
 
 ## Code Server
 
-The [code-server](https://github.com/cdr/code-server) add-on can be used to access and modify persistent volume data in your application. This can be useful when you need to edit the persistent volume data, for example with Home Assistant.
+The [code-server](https://github.com/cdr/code-server) add-on can be used to
+access and modify persistent volume data in your application. This can be
+useful when you need to edit the persistent volume data, for example with
+Home Assistant.
 
 ### Example values
 
-Below is a snippet from a `values.yaml` using the add-on. More configuration options can be found in our common chart documentation.
+Below is a snippet from a `values.yaml` using the add-on. More configuration
+options can be found in our common chart documentation.
 
 !!! note
     This example will mount `/config` into the code-server sidecar.
@@ -47,17 +53,28 @@ addons:
 
 ## Wireguard VPN
 
-The Wireguard add-on enables you to force all (or selected) network traffic through a VPN.
+The Wireguard add-on enables you to force all (or selected) network traffic
+through a VPN.
 
-This example shows how to add a Wireguard sidecar to our [qBittorrent Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/qbittorrent). It does not cover all of the configuration possibilities of the [Wireguard client image](https://github.com/k8s-at-home/container-images/tree/main/wireguard), but should give a good starting point for configuring a similar setup.
+This example shows how to add a Wireguard sidecar to our
+[qBittorrent Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/qbittorrent).
+It does not cover all of the configuration possibilities of the
+[Wireguard client image](https://github.com/k8s-at-home/container-images/tree/main/wireguard),
+but should give a good starting point for configuring a similar setup.
 
 ### Example values
 
-Below is an annotated example `values.yaml` that will result in a qBittorrent container with **all** its traffic routed through a VPN. In order to have functioning ingress and/or probes, it might be required to open certain networks or ports on the VPN firewall. That is beyond the scope of this document. Please refer to the [Wireguard client image](https://github.com/k8s-at-home/container-images/tree/main/wireguard) for more details on these environment variables.
-
+Below is an annotated example `values.yaml` that will result in a qBittorrent
+container with **all** its traffic routed through a VPN. In order to have
+functioning ingress and/or probes, it might be required to open certain
+networks or ports on the VPN firewall. That is beyond the scope of this
+document. Please refer to the
+[Wireguard client image](https://github.com/k8s-at-home/container-images/tree/main/wireguard)
+for more details on these environment variables.
 
 !!! note
-    The `WAIT_FOR_VPN` environment variable is specifically implemented by our own qBittorrent image, and it will not work with other container images.
+    The `WAIT_FOR_VPN` environment variable is specifically implemented by our
+    own qBittorrent image, and it will not work with other container images.
 
 ```yaml
 image:
@@ -80,7 +97,7 @@ persistence:
   # It will be used to communicate between the two containers.
   shared:
     enabled: true
-    emptyDir: true  
+    emptyDir: true
     mountPath: /shared
 
 addons:
@@ -133,16 +150,29 @@ addons:
 
 ## OpenVPN
 
-Similar to the Wireguard VPN, the OpenVPN add-on enables you to force all (or selected) network traffic through a VPN.
+Similar to the Wireguard VPN, the OpenVPN add-on enables you to force all
+(or selected) network traffic through a VPN.
 
-This example shows how to add an OpenVPN sidecar to our [qBittorrent Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/qbittorrent). It does not cover all of the configuration possibilities of the [OpenVPN client image](https://github.com/dperson/openvpn-client) by [@dperson](https://github.com/dperson), but should give a good starting point for configuring a similar setup.
+This example shows how to add an OpenVPN sidecar to our
+[qBittorrent Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/qbittorrent).
+It does not cover all of the configuration possibilities of the
+[OpenVPN client image](https://github.com/dperson/openvpn-client) by
+[@dperson](https://github.com/dperson), but should give a good starting point
+for configuring a similar setup.
 
 ### Example values
 
-Below is an annotated example `values.yaml` that will result in a qBittorrent container with **all** its traffic routed through a VPN. In order to have functioning ingress and/or probes, it might be required to open certain networks or ports on the VPN firewall. That is beyond the scope of this document. Please refer to the [OpenVPN client image](https://github.com/dperson/openvpn-client) for more details on these environment variables.
+Below is an annotated example `values.yaml` that will result in a qBittorrent
+container with **all** its traffic routed through a VPN. In order to have
+functioning ingress and/or probes, it might be required to open certain
+networks or ports on the VPN firewall. That is beyond the scope of this
+document. Please refer to the
+[OpenVPN client image](https://github.com/dperson/openvpn-client) for
+more details on these environment variables.
 
 !!! note
-    The `WAIT_FOR_VPN` environment variable is specifically implemented by our own qBittorrent image, and it will not work with other container images.
+    The `WAIT_FOR_VPN` environment variable is specifically implemented by our
+    own qBittorrent image, and it will not work with other container images.
 
 ```yaml
 image:
@@ -151,8 +181,10 @@ image:
   pullPolicy: IfNotPresent
 
 env:
-  # Our qBittorrent image has a feature that can wait for the VPN to be connected before actually starting the application.
-  # It does this by checking the contents of a file /shared/vpnstatus to contain the string 'connected'.
+  # Our qBittorrent image has a feature that can wait for the VPN to be
+  # connected before actually starting the application.
+  # It does this by checking the contents of a file /shared/vpnstatus to
+  # contain the string 'connected'.
   WAIT_FOR_VPN: "true"
 
 persistence:
@@ -165,7 +197,7 @@ persistence:
   # It will be used to communicate between the two containers.
   shared:
     enabled: true
-    emptyDir: true  
+    emptyDir: true
     mountPath: /shared
 
 addons:
@@ -218,7 +250,7 @@ addons:
       MIIDMTCCAhmgAwIBAgIJAKnGGJK6qLqSMA0GCSqGSIb3DQEBCwUAMBQxEjAQBgNV
       -----END CERTIFICATE-----
       </ca>
-      
+
       script-security 2
       up /vpn/up.sh
       down /vpn/down.sh
