@@ -2,7 +2,8 @@
 
 ## Dependencies
 
-If you would like to help create new charts using the common library, there's a few tools you will need.
+If you would like to help create new charts using the common library, there's
+a few tools you will need.
 
 - [helm](https://helm.sh/docs/intro/install/)
 - [helm-docs](https://github.com/norwoodj/helm-docs)
@@ -12,7 +13,7 @@ If you would like to help create new charts using the common library, there's a 
 
 To create a new chart, run the following:
 
-``` sh
+```sh
 # Clone
 git clone
 cd charts
@@ -25,7 +26,9 @@ task chart:create CHART=chart_name
 # Don't forgot edit some chart informations in charts/char_name/Chart.yaml and charts/char_name/values.yaml
 ```
 
-Second, be sure to checkout the many charts that already use this like [qBittorrent](../qbittorrent/), [node-red](../node-red/) or the many others in this repository.
+Second, be sure to checkout the many charts that already use this like
+[qBittorrent](../qbittorrent/), [node-red](../node-red/) or the many others
+in this repository.
 
 Include this chart as a dependency in your `Chart.yaml` e.g.
 
@@ -41,7 +44,8 @@ dependencies:
 
 ## Values
 
-Write a `values.yaml` with some basic defaults you want to present to the user e.g.
+Write a `values.yaml` with some basic defaults you want to present to the user
+e.g.
 
 ```yaml
 #
@@ -83,6 +87,7 @@ persistence:
 ```
 
 If not using a service, set the `service.enabled` to `false`.
+
 ```yaml
 ...
 service:
@@ -94,22 +99,31 @@ service:
 
 ### Basic
 
-In its most basic form a new chart can consist of two simple files in the `templates` folder. This will automatically render everything, based only on what is (or isn't) present in `values.yaml`.
+In its most basic form a new chart can consist of two simple files in the
+`templates` folder. This will automatically render everything, based only on
+what is (or isn't) present in `values.yaml`.
 
 **`templates/common.yaml`**:
+
 ```yaml
 {{ include "common.all . }}
 ```
+
 **`templates/NOTES.txt`**:
+
 ```yaml
 {{ include "common.notes.defaultNotes" . }}
 ```
 
 ### Advanced
 
-Sometimes it is not required to implement additional logic in a chart that you do not wish to expose through settings in `values.yaml`. For example, when you want to always mount a Secret or configMap as a volume in the Pod. In that case it is also possible to write more advanced template files. 
+Sometimes it is not required to implement additional logic in a chart that you
+do not wish to expose through settings in `values.yaml`. For example, when you
+want to always mount a Secret or configMap as a volume in the Pod. In that
+case it is also possible to write more advanced template files.
 
 **`templates/common.yaml`**:
+
 ```yaml
 {{/* First Make sure all variables are set and merged properly */}}
 {{- include "common.values.setup" . }}
@@ -131,17 +145,20 @@ configMap:
 {{ include "common.all" . }}
 ```
 
-An actual example of this can be found in the [zigbee2mqtt](../zigbee2mqtt/) chart.
+An actual example of this can be found in the [zigbee2mqtt](../zigbee2mqtt/)
+chart.
 
 ### Testing
 
-If testing locally, make sure you update the dependencies with from the chart directory:
+If testing locally, make sure you update the dependencies with from the chart
+directory:
 
 ```bash
 helm dependency update
 ```
 
-If making local changes to the `common` library, the test chart may reference the local development chart:
+If making local changes to the `common` library, the test chart may reference
+the local development chart:
 
 ```yaml
 # common-test/Chart.yaml

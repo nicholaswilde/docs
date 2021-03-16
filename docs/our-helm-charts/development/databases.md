@@ -1,8 +1,9 @@
 # Databases
 
-Databases from other repositories can be added to charts as dependencies. The databases are only installed if the `<db name>.enabled` key is set to true.
+Databases from other repositories can be added to charts as dependencies. The
+databases are only installed if the `<db name>.enabled` key is set to true.
 
-See [home-assistant](https://github.com/k8s-at-home/charts/tree/master/charts/home-assistant) for reference.
+See [home-assistant][home-assistant] for reference.
 
 ## Chart.yaml
 
@@ -27,7 +28,8 @@ dependencies:
 
 ## values.yaml
 
-Update the `values.yaml` with the following. Refer the respective database chart `values.yaml` for additional values.
+Update the `values.yaml` with the following. Refer the respective database
+chart `values.yaml` for additional values.
 
 ### [MariaDB](https://github.com/bitnami/charts/tree/master/bitnami/mariadb)
 
@@ -71,3 +73,5 @@ influxdb:
   persistence:
     enabled: false
 ```
+
+[home-assistant]: https://github.com/k8s-at-home/charts/tree/master/charts/home-assistant
