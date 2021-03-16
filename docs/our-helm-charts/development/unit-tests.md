@@ -44,7 +44,7 @@ Once Visual Studio Code is set up, and you open the `charts` workspace, you
 will see a popup asking if you wish to re-open the workspace in a development
 container:
 
-![Visual Studio Code development container popup](https://raw.githubusercontent.com/k8s-at-home/charts/master/docs/images/vscode_devcontainer_popup.png)
+![Visual Studio Code development container popup](../../assets/screenshots/vscode_devcontainer_popup.png)
 
 Select the option that you prefer. The workspace will be reopened and a
 Dockerized workspace will be built. You can now use Visual Studio Code as
@@ -53,7 +53,7 @@ normal.
 To run or debug the unit tests, click the "Run" button on the left sidebar
 and select the desired configuration:
 
-![Visual Studio Code run configurations](https://raw.githubusercontent.com/k8s-at-home/charts/master/docs/images/vscode_run_unittests.png)
+![Visual Studio Code run configurations](../../assets/screenshots/vscode_run_unittests.png)
 
 - _UnitTest - active spec file only_: This configuration will try to run
 the currently opened test file.
