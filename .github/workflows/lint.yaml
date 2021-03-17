@@ -44,3 +44,11 @@ jobs:
 
       - name: Lint all the markdown files.
         run: markdownlint .
+
+  markdown-link-check:
+    name: Markdown link check
+    runs-on: ubuntu-20.04
+
+    steps:
+    - uses: actions/checkout@v2
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1

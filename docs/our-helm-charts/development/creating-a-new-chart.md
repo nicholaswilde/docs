@@ -27,8 +27,9 @@ task chart:create CHART=chart_name
 ```
 
 Second, be sure to checkout the many charts that already use this like
-[qBittorrent](../qbittorrent/), [node-red](../node-red/) or the many others
-in this repository.
+[qBittorrent](https://github.com/k8s-at-home/charts/tree/master/charts/qbittorrent),
+[node-red](https://github.com/k8s-at-home/charts/tree/master/charts/node-red)
+or the many others in this repository.
 
 Include this chart as a dependency in your `Chart.yaml` e.g.
 
@@ -145,8 +146,7 @@ configMap:
 {{ include "common.all" . }}
 ```
 
-An actual example of this can be found in the [zigbee2mqtt](../zigbee2mqtt/)
-chart.
+An actual example of this can be found in the [zigbee2mqtt][zigbee2mqtt] chart.
 
 ### Testing
 
@@ -177,3 +177,5 @@ Be sure to lint your chart to check for any errors.
 task chart:lint CHART=chart_name
 task chart:ct-lint CHART=chart_name
 ```
+
+[zigbee2mqtt]: https://github.com/k8s-at-home/charts/tree/master/charts/zigbee2mqtt

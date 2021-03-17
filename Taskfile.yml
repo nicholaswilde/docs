@@ -28,6 +28,13 @@ tasks:
     cmds:
       - task: yamllint
       - task: markdownlint
+      - task: linkcheck
+
+  linkcheck:
+    desc: Run markdown-link-check
+    cmds:
+      - ./hack/linkcheck.sh
+    ignore_error: true
 
   markdownlint:
     desc: Run markdownlint-cli

@@ -59,7 +59,7 @@ through a VPN.
 This example shows how to add a Wireguard sidecar to our
 [qBittorrent Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/qbittorrent).
 It does not cover all of the configuration possibilities of the
-[Wireguard client image](https://github.com/k8s-at-home/container-images/tree/main/wireguard),
+[Wireguard client image](https://github.com/k8s-at-home/container-images/tree/main/apps/wireguard),
 but should give a good starting point for configuring a similar setup.
 
 ### Example values
@@ -69,7 +69,7 @@ container with **all** its traffic routed through a VPN. In order to have
 functioning ingress and/or probes, it might be required to open certain
 networks or ports on the VPN firewall. That is beyond the scope of this
 document. Please refer to the
-[Wireguard client image](https://github.com/k8s-at-home/container-images/tree/main/wireguard)
+[Wireguard client image](https://github.com/k8s-at-home/container-images/tree/main/apps/wireguard)
 for more details on these environment variables.
 
 !!! note

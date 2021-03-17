@@ -12,3 +12,9 @@ repos:
       - id: markdownlint
         name: Run markdownlint
         description: Lint markdown files
+  - repo: https://github.com/gruntwork-io/pre-commit
+    rev: v0.1.12
+    hooks:
+      - id: markdown-link-check
+        name: Run markdown-link-check
+        description: Check link in markdown files
