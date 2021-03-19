@@ -154,7 +154,7 @@ Similar to the Wireguard VPN, the OpenVPN add-on enables you to force all
 (or selected) network traffic through a VPN.
 
 This example shows how to add an OpenVPN sidecar to our
-[qBittorrent Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/qbittorrent).
+[qBittorrent Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorrent).
 It does not cover all of the configuration possibilities of the
 [OpenVPN client image](https://github.com/dperson/openvpn-client) by
 [@dperson](https://github.com/dperson), but should give a good starting point
