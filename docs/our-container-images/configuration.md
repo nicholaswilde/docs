@@ -17,3 +17,9 @@ The following configuration is available across all the k8s@home container image
 |:---------:|-------------------------------------|
 |  `/app`   | Application install directory       |
 | `/config` | Application configuration directory |
+
+## User
+
+| User  | ID    |
+|:-----:|-------|
+| `kah` | `568` |
