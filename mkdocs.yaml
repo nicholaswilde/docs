@@ -120,6 +120,11 @@ nav:
       - Introduction: our-container-images/introduction.md
       - Configuration: our-container-images/configuration.md
       - Permissions: our-container-images/permissions.md
+      - Development:
+          - Creating a new container image: >-
+              our-container-images/development/creating-a-new-container-image.md
+          - Dockerfile: our-container-images/development/dockerfile.md
+          - Base images: our-container-images/development/base-images.md
   - Support:
       - Community: support/community.md
       - FAQ: support/faq.md
