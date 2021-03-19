@@ -57,7 +57,7 @@ The Wireguard add-on enables you to force all (or selected) network traffic
 through a VPN.
 
 This example shows how to add a Wireguard sidecar to our
-[qBittorrent Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/qbittorrent).
+[qBittorrent Helm chart](https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorrent).
 It does not cover all of the configuration possibilities of the
 [Wireguard client image](https://github.com/k8s-at-home/container-images/tree/main/apps/wireguard),
 but should give a good starting point for configuring a similar setup.
