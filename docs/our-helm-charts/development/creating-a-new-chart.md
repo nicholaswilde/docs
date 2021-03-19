@@ -27,8 +27,8 @@ task chart:create CHART=chart_name
 ```
 
 Second, be sure to checkout the many charts that already use this like
-[qBittorrent](https://github.com/k8s-at-home/charts/tree/master/charts/qbittorrent),
-[node-red](https://github.com/k8s-at-home/charts/tree/master/charts/node-red)
+[qBittorrent](https://github.com/k8s-at-home/charts/tree/master/charts/stable/qbittorrent),
+[node-red](https://github.com/k8s-at-home/charts/tree/master/charts/stable/node-red)
 or the many others in this repository.
 
 Include this chart as a dependency in your `Chart.yaml` e.g.
@@ -53,7 +53,7 @@ e.g.
 # IMPORTANT NOTE
 #
 # This chart inherits from our common library chart. You can check the default values/options here:
-# https://github.com/k8s-at-home/charts/tree/master/charts/common/values.yaml
+# https://github.com/k8s-at-home/library-charts/tree/master/charts/stable/common/values.yaml
 #
 
 image:
@@ -178,4 +178,4 @@ task chart:lint CHART=chart_name
 task chart:ct-lint CHART=chart_name
 ```
 
-[zigbee2mqtt]: https://github.com/k8s-at-home/charts/tree/master/charts/zigbee2mqtt
+[zigbee2mqtt]: https://github.com/k8s-at-home/charts/tree/master/charts/stable/zigbee2mqtt
