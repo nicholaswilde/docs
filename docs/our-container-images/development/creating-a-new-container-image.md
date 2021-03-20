@@ -113,7 +113,7 @@ http:
   http://localhost:8686:
     status: 200
     body:
-      - '<title>Lidarr</title>'
+    - '<title>Lidarr</title>'
 ```
 
 ### latest-version.sh
@@ -149,7 +149,7 @@ copy the scripts over to the image.
 
 Then be sure to add a `source` line to the [entrypoint.sh script](#entrypointsh).
 
-See [plex-media-server] for reference.
+See [plex] for reference.
 
 [base image shim scripts]: ./base-images.md#shim-scripts
 [goss]: https://github.com/aelsabbahy/goss
@@ -161,4 +161,4 @@ See [plex-media-server] for reference.
 [entrypoint.sh]: https://docs.docker.com/engine/reference/builder/#entrypoint
 [dockerfile]: https://docs.docker.com/engine/reference/builder/
 [from]: https://docs.docker.com/engine/reference/builder/#from
-[plex-media-server]: https://github.com/k8s-at-home/container-images/tree/main/apps/plex-media-server
+[plex]: https://github.com/k8s-at-home/container-images/tree/main/apps/plex
