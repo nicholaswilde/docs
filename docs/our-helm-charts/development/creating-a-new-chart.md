@@ -9,7 +9,7 @@ a few tools you will need.
 - [helm-docs](https://github.com/norwoodj/helm-docs)
 - [task](https://github.com/go-task/task) (optional)
 
-## Creating a new Chart
+## Creating a new chart
 
 To create a new chart, run the following:
 
