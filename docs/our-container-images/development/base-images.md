@@ -12,6 +12,29 @@ The following distributions are available as a base image:
 
 The source code can be found [here].
 
+## shim scripts
+
+shim scripts have been added to the base images to perform startup tasks
+before the app is launched.
+
+!!! note
+    The shim scripts must be sourced in the [entrypoint.sh] file in order
+    to work.
+
+### config.sh
+
+The `config.sh` shim script is used to create the `/config` folder.
+
+### umask.sh
+
+The `umask.sh` shim script is used to set the setting of a mask that controls
+how file permissions are set for newly created files.
+
+### vpn.sh
+
+The `vpn.sh` shim script is used to allow the container to wait for the VPN
+connection before running the app.
+
 ## Tini
 
 The base images use the [Tini][tini] init in order to create the smallest
@@ -22,3 +45,4 @@ reaping zombies and performing signal forwarding.
 [alpine]: https://github.com/orgs/k8s-at-home/packages/container/package/alpine
 [here]: https://github.com/k8s-at-home/container-images/tree/main/base
 [tini]: https://github.com/krallin/tini/
+[entrypoint.sh]: ./creating-a-new-container-image.md#entrypointsh
