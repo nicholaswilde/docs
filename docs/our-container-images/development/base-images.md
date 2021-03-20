@@ -14,7 +14,7 @@ The source code can be found [here].
 
 ## shim scripts
 
-shim scripts have been added to the base images to perform startup tasks
+shim scripts have been added to the Ubuntu base image to perform startup tasks
 before the app is launched.
 
 !!! note
