@@ -20,6 +20,20 @@ with an already existing app or you can start from scratch.
 image.
 2. Add the following files to the container image folder.
 
+### Folder structure
+
+```shell
+apps/app name/
+     ├── Dockerfile
+     ├── entrypoint.sh
+     ├── goss.yaml
+     ├── latest-version.sh
+     ├── PLATFORM
+     ├── shim
+     │   └── shim-script.sh
+     └── VERSION
+```
+
 ### Dockerfile
 
 See [Dockerfile](./dockerfile.md).
