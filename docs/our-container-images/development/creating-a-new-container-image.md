@@ -60,7 +60,7 @@ This file will most likely be custom for each app. It is recommended to take a
 look at other container images or other versions of the Docker image for the
 app. A good source might be searching [Docker Hub](https://hub.docker.com/).
 
-The only difference is the sourcing of the `umask.sh` and `vpn.sh` scripts
+The only difference is the sourcing of the [base image shim scripts]
 which are added to the base image.
 
 ```bash
@@ -137,6 +137,7 @@ Then be sure to add a `source` line to the [entrypoint.sh script](#entrypointsh)
 
 See [plex-media-server] for reference.
 
+[base image shim scripts]: ./base-images.md#shim-scripts
 [goss]: https://github.com/aelsabbahy/goss
 [dgoss]: https://github.com/aelsabbahy/goss/tree/master/extras/dgoss
 [apps-schedule.yaml]: https://github.com/k8s-at-home/container-images/actions/workflows/apps-schedule.yaml
