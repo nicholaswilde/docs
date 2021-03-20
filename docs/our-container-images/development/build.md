@@ -28,13 +28,13 @@ from the repository root directory.
 ### Build
 
 ```shell
-docker buildx build --platform $(cat ./apps/<app name>/PLATFORM) -f ./apps/<app name>/Dockerfile .
+docker buildx build --build-arg VERSION=$(cat ./apps/<app name>/VERSION) --platform $(cat ./apps/<app name>/PLATFORM) -f ./apps/<app name>/Dockerfile .
 ```
 
 ### Load
 
 ```shell
-docker buildx build -t <app name>:test -f ./apps/<app name>/Dockerfile . --load
+docker buildx build -t <app name>:test --build-arg VERSION=$(cat ./apps/<app name>/VERSION) -f ./apps/<app name>/Dockerfile . --load
 ```
 
 [entrypoint.sh]: ./creating-a-new-container-image.md#entrypointsh
