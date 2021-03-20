@@ -8,6 +8,7 @@ you will need:
 - [Docker](https://www.docker.com/get-started)
 - [buildx](https://docs.docker.com/buildx/working-with-buildx/)
 - [jq](https://stedolan.github.io/jq/)
+- [goss] & [dgoss]
 - [task (optional)](https://github.com/go-task/task)
 
 ## Creating a new container image
@@ -76,7 +77,7 @@ source "/shim/<app name>-preferences.sh"
 
 ### goss.yaml
 
-The `VERSION` file is used by the
+The `goss.yaml` file is used by the
 [Apps - Build, Test, Push github action][apps.yaml] to perform a health
 check on the container image using [goss](https://github.com/aelsabbahy/goss).
 
@@ -136,6 +137,9 @@ Then be sure to add a `source` line to the [entrypoint.sh script](#entrypointsh)
 
 See [plex-media-server] for reference.
 
+[goss]: https://github.com/aelsabbahy/goss
+[dgoss]: https://github.com/aelsabbahy/goss/tree/master/extras/dgoss
+[apps-schedule.yaml]: https://github.com/k8s-at-home/container-images/actions/workflows/apps-schedule.yaml
 [apps.yaml]: https://github.com/k8s-at-home/container-images/actions/workflows/apps.yaml
 [manual]: https://github.com/aelsabbahy/goss/blob/master/docs/manual.md
 [multi-platform]: https://docs.docker.com/buildx/working-with-buildx/#build-multi-platform-images
