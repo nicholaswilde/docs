@@ -110,8 +110,8 @@ nav:
   - Home: index.md
   - Our Helm Charts:
       - Introduction: our-helm-charts/introduction.md
-      - Common library: our-helm-charts/common-library.md
-      - Common library add-ons: our-helm-charts/common-library-add-ons.md
+      - Common: our-helm-charts/common-library.md
+      - Common Add-ons: our-helm-charts/common-library-add-ons.md
       - Development:
           - Creating a new chart: our-helm-charts/development/creating-a-new-chart.md
           - Databases: our-helm-charts/development/databases.md

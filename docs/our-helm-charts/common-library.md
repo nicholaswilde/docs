@@ -30,6 +30,11 @@ usage for a Library chart, we saw this pattern and decided it was worth it for
 us to create a library. This means each one of these app charts has a
 dependency on what we call the `common` library.
 
+## Changelog
+
+To view the changelog for the common library see 
+[here](https://github.com/k8s-at-home/library-charts/tree/main/charts/stable/common#changelog).
+
 ## Source code
 
 The source code for our library chart can be found
