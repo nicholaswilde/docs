@@ -126,6 +126,8 @@ nav:
           - Dockerfile: our-container-images/development/dockerfile.md
           - Base images: our-container-images/development/base-images.md
           - Build: our-container-images/development/build.md
+  - Guides:
+      - DynDNS with a CronJob: guides/dyndns.md
   - Support:
       - Community: support/community.md
       - FAQ: support/faq.md
