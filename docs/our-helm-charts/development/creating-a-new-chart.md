@@ -45,7 +45,8 @@ dependencies:
 
 ## Values
 
-Edit `values.yaml` with some basic defaults you want to present to the user. Please ensure you anotate them with [helm-docs](https://github.com/norwoodj/helm-docs)
+Edit `values.yaml` with some basic defaults you want to present to the user.
+Please ensure you anotate them with [helm-docs](https://github.com/norwoodj/helm-docs)
 e.g.
 
 ```yaml
@@ -91,7 +92,8 @@ persistence:
     # -- Enable data persistency
     enabled: false
     # -- Use empty directory for persistency (only for tests)
-    emptyDir: false
+    emptyDir: 
+      enabled: false
     # -- Data mount path
     mountPath: /data
 ```
