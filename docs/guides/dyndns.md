@@ -97,7 +97,6 @@ spec:
                 name: do-token
             command:
             - "/bin/sh"
-            - "-ec"
             - "/app/dyndns-updater.sh"
             volumeMounts:
             - name: dyndns-updater
